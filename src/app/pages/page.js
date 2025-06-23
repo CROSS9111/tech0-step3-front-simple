@@ -7,7 +7,7 @@ export default async function NightPage() {
 
   // fetch 関数を使って指定した URL（Flask サーバー）にリクエストを送信します。
   // await は fetch の完了を待ち、結果を res に格納します
-  const res = await fetch('http://127.0.0.1:8000/night'); 
+  const res = await fetch('https://tech0-step3-backend-simple.onrender.com/night'); 
 
   // await を使用して、テキストの取得が完了するまで待機します
   const data = await res.text();
